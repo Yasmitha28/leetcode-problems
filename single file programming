@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        int P=sc.nextInt();
+        float R=sc.nextFloat();
+        int T=sc.nextInt();
+        double simpleinterest=(P*R*T)/100.0;
+        double compoundinterest=P*(Math.pow((1+R/100),T)-1);
+        System.out.printf("Simple Interest:%.2f\n",simpleinterest);
+        System.out.printf("Compound Interest:%.2f\n",compoundinterest);
+        sc.close();
+    }
+}
